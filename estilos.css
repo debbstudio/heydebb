@@ -83,8 +83,9 @@ background: linear-gradient(0deg, rgba(34,0,36,0) 0%, rgba(255, 163, 59, 0.345) 
     display: flex;
     flex-direction: column;
     margin-bottom: 20px; 
+}
 
-}.bloque img {
+.bloque img {
     width: 100%; 
     height: auto; 
 }
@@ -103,6 +104,8 @@ background: linear-gradient(0deg, rgba(34,0,36,0) 0%, rgba(255, 163, 59, 0.345) 
     padding: 1em;
 }
 #productos div{
+    /*display: flex;
+    flex-wrap: wrap;*/
     width: 100%;
     display:flex ;
     flex-direction: column;
@@ -163,7 +166,7 @@ footer a:hover{
     header{
         flex-direction: row;
         align-items: center;
-        justify-content: space-between; 
+        justify-content: space-between; /*solo cuando sobra espacio en el contendedor*/
     }
     #home{
         background: rgb(34,0,36);
@@ -179,6 +182,8 @@ footer a:hover{
     #home h2{
         font-size: 5rem;
         margin: 0 2em 0;
+        
+
     }
 
     #productos figure{
@@ -212,7 +217,7 @@ footer a:hover{
 
     #home h2{
         font-size: 4.5rem;
-        margin: 0 0 5em;
+        margin: 0 0 5em; /*margen superior */
         max-width: 40%;
     
     }
@@ -220,13 +225,13 @@ footer a:hover{
         font-size: 3em; 
     }
     .texto {
-        flex-direction: row; 
-        flex-wrap: wrap; 
+        flex-direction: row; /* alinea elementos en fila */
+        flex-wrap: wrap; /* hace que los elementos se envuelvan en filas */
     }
 
     .bloque {
-        flex: 1 0 48%;
-        padding: 0 10px; 
+        flex: 1 0 48%; /* Cada bloque ocupa el 48% del ancho disponible, con un espacio de 2% entre ellos */
+        padding: 0 10px; /* Agregamos padding a ambos lados */
         margin: auto;
     }
     .bloque h3{
